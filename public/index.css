@@ -1,4 +1,4 @@
-.* {
+* {
   border: 1px solid red;
 }
 
@@ -8,12 +8,8 @@ hr {
   height: 98vh;
 }
 
-body {
-  background-image: linear-gradient(#1480C0, #00801A);
-}
-
 a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: #ffffff;
   text-decoration: none;
 }
@@ -29,8 +25,14 @@ a {
 }
 
 .navbar a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-black a {
+  font-family: "Montserrat";
+  color: #000000;
   text-decoration: none;
 }
 
@@ -42,12 +44,12 @@ a {
 
 .navbar h1 {
   font-size: 35px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
 }
 
 .navbar h2 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
 }
 
@@ -105,13 +107,13 @@ path {
 }
 
 .map h1 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
 }
 
 .map text {
   font-size: 12px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
 }
 
@@ -127,13 +129,13 @@ path {
 }
 
 #Jaragua:hover {
-  fill: #86C126;
+  fill: #86c126;
   stroke-width: 0;
   filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
 }
 
 #Itaperiu:hover {
-  fill: #F8931F;
+  fill: #f8931f;
   stroke-width: 0;
   filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
 }
@@ -145,25 +147,25 @@ path {
 }
 
 #Guaramirim:hover {
-  fill: #1480C0;
+  fill: #1480c0;
   stroke-width: 0;
   filter: drop-shadow(4px -4px 3px rgba(0, 0, 0, 0.25));
 }
 
 #Corupa:hover {
-  fill: #F8C401;
+  fill: #f8c401;
   stroke-width: 0;
   filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
 }
 
 #Schroeder:hover {
-  fill: #01923F;
+  fill: #01923f;
   stroke-width: 0;
   filter: drop-shadow(4px -4px 3px rgba(0, 0, 0, 0.25));
 }
 
 #Massaranduba:hover {
-  fill: #E62E2E;
+  fill: #e62e2e;
   stroke-width: 0;
   filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
 }
@@ -173,16 +175,16 @@ text {
 }
 
 @media screen and (max-width: 1000px) {
-  .main-page{
-      height: 97.9vh;
-  }
-  
-  .map-title{
-      margin-top: -20px;
+  .main-page {
+    height: 97.9vh;
   }
 
-  svg{
-      width: 50vw;
+  .map-title {
+    margin-top: -20px;
+  }
+
+  svg {
+    width: 50vw;
   }
 }
 
@@ -205,13 +207,46 @@ footer img {
 
 footer p {
   margin-right: 100px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 12px;
 }
 
 @media screen and (max-width: 1000px) {
-  footer p, footer img{
-      display: none;
+  footer p,
+  footer img {
+    display: none;
   }
+}
+
+.main-page-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 98vw;
+  height: 98.2vh;
+  color: #000000;
+}
+
+.return {
+  margin-right: 80vw;
+  font-size: 22px;
+  margin-top: -70px;
+}
+
+.return a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.return p {
+  background-color: #ecebeb;
+  padding: 5px;
+  transition: 0.3s;
+  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+
+.return p:hover {
+  transform: scale(1.2);
 }

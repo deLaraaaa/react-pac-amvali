@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function HeaderWhite() {
   return (
     <nav className="navbar">
       <div className="content-nav">
@@ -21,7 +21,7 @@ function Header() {
           <a href="./login.html">
             <img
               id="avatar"
-              src="/img/Avatar.png"
+              src="/img/AvatarWhite.png"
               alt="Login Avatar"
             />
           </a>
@@ -31,4 +31,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderWhite;

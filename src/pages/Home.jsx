@@ -1,19 +1,23 @@
 import React from "react";
-import Header from "../components/Header";
+import { Helmet } from "react-helmet";
+import HeaderWhite from "../components/HeaderWhite";
 import Map from "../components/Map";
-import Footer from "../components/Footer";
+import FooterWhite from "../components/FooterWhite";
 
 export function Home() {
   return (
     <div className="main-page">
-      <Header />
+      <Helmet>
+        <body style="background-image: linear-gradient(#1480c0, #00801A);" />
+      </Helmet>
+      <HeaderWhite />
       <div className="map">
         <div className="map-title">
           <h1>ESCOLHA UM MUNICÍPIO</h1>
         </div>
         <Map />
       </div>
-      <Footer />
+      <FooterWhite />
     </div>
   );
 }
