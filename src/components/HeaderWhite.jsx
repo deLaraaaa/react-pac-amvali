@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HeaderWhite() {
   return (
@@ -18,13 +19,13 @@ function HeaderWhite() {
           </h1>
         </div>
         <div>
-          <a href="./login.html">
+          <Link to="Login">
             <img
-              id="avatar"
+              id="login"
               src="/img/AvatarWhite.png"
               alt="Login Avatar"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

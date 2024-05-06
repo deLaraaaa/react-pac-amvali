@@ -11,7 +11,7 @@ export function Jaragua() {
         <body style="background-color: #F8F8F8;" />
       </Helmet>
       <HeaderBlack />
-      <div className="return"><Link to=" "><p>← VOLTAR</p></Link></div>
+      <div className="return"><Link to="/"><p>← VOLTAR</p></Link></div>
         <div className="title">
             <h1>ESCOLHA UM PLANO PARA CONTINUAR</h1>
         </div>
