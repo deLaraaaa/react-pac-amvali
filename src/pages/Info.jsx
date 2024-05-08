@@ -6,9 +6,7 @@ import HeaderLogin from "../components/HeaderLogin";
 function Info() {
   return (
     <div className="main-info">
-      <Helmet>
-        <body style="background-color: #F8C401;" />
-      </Helmet>
+      <Helmet bodyAttributes={{style: "background-color: #F8C401;"}} />
       <HeaderLogin />
       <div className="card-info">
         <div id="card" className="primary-card-info">
@@ -34,7 +32,7 @@ function Info() {
           </div>
           <div className="submit-info">
             <h3>Ainda precisa de uma conta?</h3>
-            <Link to="Registro">
+            <Link to="../Registro">
               <button>CADASTRE-SE</button>
             </Link>
           </div>

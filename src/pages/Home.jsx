@@ -7,9 +7,7 @@ import FooterWhite from "../components/FooterWhite";
 export function Home() {
   return (
     <div className="main-page">
-      <Helmet>
-        <body style="background-image: linear-gradient(#1480c0, #00801A);" />
-      </Helmet>
+      <Helmet bodyAttributes={{style: "background-image: linear-gradient(#1480c0, #00801A);"}} />
       <HeaderWhite />
       <div className="map">
         <div className="map-title">

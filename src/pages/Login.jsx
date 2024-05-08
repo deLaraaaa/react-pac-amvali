@@ -2,46 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import HeaderLogin from "../components/HeaderLogin";
+import FormsLogin from "../components/FormsLogin";
+import HalfImage from "../components/HalfImage";
 
 function Login() {
   return (
     <div className="main-login">
-      <Helmet>
-        <body style="background-color: #F8C401;" />
-      </Helmet>
+      <Helmet bodyAttributes={{style: 'background-color : #F8C401'}} />
       <HeaderLogin />
-      <div className="card-principal">
-        <div id="card" className="card">
+      <div className="card-principal-login">
+        <div id="card" className="card-login">
           <div className="half1">
-            <div className="title">
+            <div className="title-login">
               <h1>BEM-VINDO DE VOLTA!</h1>
             </div>
-            <form className="form" action="POST">
-              <label>
-                <input className="input" type="email" placeholder="" required />
-                <span>E-Mail...</span>
-              </label>
-
-              <label>
-                <input className="input" type="text" placeholder="" required />
-                <span>Nome Completo...</span>
-              </label>
-              <label className="password-label">
-                <input
-                  className="input"
-                  type="password"
-                  placeholder=""
-                  required
-                  id="password"
-                />
-                <span>Senha...</span>
-                <img
-                  src="/img/hide.png"
-                  id="togglePassword"
-                  style={{ width: "30px", cursor: "pointer" }}
-                />
-              </label>
-            </form>
+            <FormsLogin />
             <div className="submit">
               <div className="enter-button">
                 <button>ENTRAR</button>
@@ -57,15 +32,7 @@ function Login() {
               </div>
             </div>
           </div>
-          <div className="half2">
-            <div className="grey-logo">
-              <img
-                className="grey-logo"
-                src="/img/Logo AMV Grey.png"
-                alt=""
-              />
-            </div>
-          </div>
+          <HalfImage />
         </div>
       </div>
     </div>

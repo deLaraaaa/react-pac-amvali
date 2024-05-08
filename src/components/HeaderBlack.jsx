@@ -19,7 +19,7 @@ function HeaderBlack() {
           </h1>
         </div>
         <div>
-          <Link to="Login">
+          <Link to="../Login">
             <img
               id="login"
               src="/img/AvatarBlack.png"

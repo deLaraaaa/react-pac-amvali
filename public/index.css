@@ -199,8 +199,6 @@ text {
 
 footer {
   display: flex;
-  position: absolute;
-  bottom: 0;
   width: 98vw;
   height: 10vh;
 }
@@ -218,45 +216,158 @@ footer img {
 
 footer p {
   margin-right: 100px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 12px;
 }
 
 @media screen and (max-width: 1000px) {
-  footer p,
-  footer img {
-    display: none;
+  footer p, footer img{
+      display: none;
   }
 }
 
 .main-page-city {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 98vw;
-  height: 98.2vh;
-  color: #000000;
+  min-height: 98.2vh;
 }
 
-.return {
+.return{
   margin-right: 80vw;
   font-size: 22px;
 }
 
-.return a {
+.return a{
   text-decoration: none;
   color: #000000;
 }
 
-.return p {
+.return p{
   background-color: #ecebeb;
   padding: 5px;
-  transition: 0.3s;
+  transition: .3s;
   filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
 }
 
-.return p:hover {
+.return p:hover{
+  transform: scale(1.2);
+}
+
+.card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat';
+  color: #000000;
+  text-decoration: none;
+}
+
+.title {
+  margin-top: 5vh;
+}
+
+.title h1{
+  font-weight: 400;
+}
+
+.card-area{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80vw;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.7vw;
+  background-color: #ffffff;
+  height: 18.04vw;
+  width: 15.03vw;
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.10);
+  transition: .3s;
+}
+
+.card:hover{
+  background-color: #008040;
+}
+
+.card:hover path{
+  fill: #ffffff;
+}
+
+.card:hover .text{
+  color: #ffffff;
+}
+
+.card:hover .see-more p{
+  color: #ffffff;
+}
+
+.card:hover .see-more #arrow{
+  color: #ffffff;
+}
+
+.card-image{
+  display: flex;
+  justify-content: center;
+}
+
+.card-image path{
+  fill: #008040;
+}
+
+.text{
+  width: 88%;
+  transition: .3s;
+}
+
+.card-title h2{
+  font-weight: 500;
+  margin: 0;
+}
+
+.card-text p{
+  font-size: 15px;
+}
+
+.see-more{
+  transition: .3s;
+  width: 88%;
+}
+
+.see-more p{
+  color: #000000;
+  font-size: 13px;
+}
+
+#arrow{
+  color: #008040;
+}
+
+.create{
+  margin-left: 80vw;
+  font-size: 22px;
+}
+
+.create a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.create p{
+  background-color: #ecebeb;
+  padding: 5px;
+  transition: .3s;
+  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+
+.create p:hover{
   transform: scale(1.2);
 }
 
@@ -282,14 +393,14 @@ footer p {
   width: 6vw;
 }
 
-.card-principal{
+.card-principal-login{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 98vh;
 }
 
-.card {
+.card-login {
   overflow: hidden;
   display: flex;
   justify-content: end;
@@ -300,7 +411,7 @@ footer p {
   box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25)
 }
 
-.title{
+.title-login{
   margin-bottom: 60px;
 }
 

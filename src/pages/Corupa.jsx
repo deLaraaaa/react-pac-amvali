@@ -1,11 +1,30 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+import FooterBlack from "../components/FooterBlack";
+import HeaderBlack from "../components/HeaderBlack";
+import Card from "../components/Card";
 
 export function Corupa() {
   return (
-    <body style={{backgroundColor: "Snow"}}>
-      <div className="main-page">
-        <h1>Corupa</h1>
+    <div className="main-page-city">
+      <Helmet>
+        <body style="background-color: #F8F8F8;" />
+      </Helmet>
+      <HeaderBlack />
+      <div className="return">
+        <Link to="/">
+          <p>← VOLTAR</p>
+        </Link>
       </div>
-    </body>
+      <div className="title">
+        <h1>ESCOLHA UM PLANO PARA CONTINUAR</h1>
+      </div>
+      <div className="card-area">
+        <Card />
+        <Card />
+      </div>
+      <FooterBlack />
+    </div>
   );
 }

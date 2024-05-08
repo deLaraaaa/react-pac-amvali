@@ -1,7 +1,16 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
 
 function Map() {
+  useEffect(() => {
+    var textElements = document.querySelectorAll("text");
+    for (var i = 0; i < textElements.length; i++) {
+      if (textElements[i]) {
+        textElements[i].style.pointerEvents = "none";
+      }
+    }
+  }, []);
+
   return (
     <div>
       <svg
@@ -78,6 +87,6 @@ function Map() {
       </svg>
     </div>
   );
-}
+};
 
 export default Map;
