@@ -23,6 +23,7 @@ export function Jaragua() {
         <Card />
         <Card />
         <Card />
+        <Card />
       </div>
       <div className="create">
         <Link to="/">

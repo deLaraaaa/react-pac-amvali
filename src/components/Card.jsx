@@ -13,7 +13,7 @@ function Card() {
                         </div>
                         <div className="card-text">
                             <p>planejamento urbano para orientar o desenvolvimento e o crescimento das cidades de forma
-                                ordenada e sustentável.</p>
+                                ordenada e sustentável. aaaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaa</p>
                         </div>
                     </div>
                     <div className="see-more">

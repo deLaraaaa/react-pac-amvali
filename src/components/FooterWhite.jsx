@@ -4,7 +4,9 @@ function FooterWhite() {
   return (
     <footer>
       <div>
+      <a href="https://amvali.org.br/" target="_blank" rel="noopener noreferrer">
         <img src="/img/Logo AMV White.png" alt="Amvali White Logo" />
+      </a>
       </div>
       <div className="footer-text">
         <p>CNPJ 83.784.090/0001-86</p>

@@ -1,232 +1,19 @@
+/* Debugger, linha no meio da página, adicionar hr depois do body */
 .* {
   border: 1px solid red;
 }
 
-/* Debugger, linha no meio da página, adicionar hr depois do body */
 hr {
   position: absolute;
   height: 98vh;
 }
 
+/* Font */
 body{
   font-family: 'Montserrat', sans-serif;
 }
 
-.main-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 98vw;
-  height: 98.2vh;
-  color: #ffffff;
-}
-
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.navbar-black {
-  width: 97vw;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-black a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.navbar-black h1 {
-  font-size: 35px;
-  font-weight: 700;
-}
-
-.navbar-black h2 {
-  font-weight: 400;
-}
-
-.navbar {
-  width: 97vw;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar h1 {
-  font-size: 35px;
-  font-weight: 700;
-}
-
-.navbar h2 {
-  font-weight: 400;
-}
-
-.content-nav {
-  width: 92vw;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.content-nav #login {
-  width: 35px;
-}
-
-.content-nav #white-logo {
-  width: 70px;
-}
-
-.logo-dash {
-  display: flex;
-  align-items: center;
-}
-
-#dash {
-  margin-left: 10px;
-  transition: 0.3s;
-}
-
-#dash:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-.identity h1 {
-  text-decoration: none;
-  margin-right: 11vw;
-}
-
-.map {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.map-title {
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-path {
-  stroke: #ffffff;
-  stroke-width: 0.5px;
-}
-
-.map h1 {
-  font-family: "Montserrat";
-  font-weight: 400;
-}
-
-.map text {
-  font-size: 12px;
-  font-family: "Montserrat";
-  font-weight: 500;
-}
-
-#Jaragua,
-#Corupa,
-#Schroeder,
-#Itaperiu,
-#Barra,
-#Guaramirim,
-#Massaranduba {
-  fill: #ffffff1c;
-  transition: 0.3s;
-}
-
-#Jaragua:hover {
-  fill: #86c126;
-  stroke-width: 0;
-  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
-}
-
-#Itaperiu:hover {
-  fill: #f8931f;
-  stroke-width: 0;
-  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
-}
-
-#Barra:hover {
-  fill: #005198;
-  stroke-width: 0;
-  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
-}
-
-#Guaramirim:hover {
-  fill: #1480c0;
-  stroke-width: 0;
-  filter: drop-shadow(4px -4px 3px rgba(0, 0, 0, 0.25));
-}
-
-#Corupa:hover {
-  fill: #f8c401;
-  stroke-width: 0;
-  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
-}
-
-#Schroeder:hover {
-  fill: #01923f;
-  stroke-width: 0;
-  filter: drop-shadow(4px -4px 3px rgba(0, 0, 0, 0.25));
-}
-
-#Massaranduba:hover {
-  fill: #e62e2e;
-  stroke-width: 0;
-  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
-}
-
-text {
-  fill: #ffffff;
-}
-
-@media screen and (max-width: 1000px) {
-  .main-page {
-    height: 97.9vh;
-  }
-
-  .map-title {
-    margin-top: -20px;
-  }
-
-  svg {
-    width: 50vw;
-  }
-}
-
-footer {
-  display: flex;
-  width: 98vw;
-  height: 10vh;
-}
-
-footer img {
-  width: 7.3vw;
-  margin-right: 100px;
-}
-
-.footer-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-footer p {
-  margin-right: 100px;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 12px;
-}
-
-@media screen and (max-width: 1000px) {
-  footer p, footer img{
-      display: none;
-  }
-}
-
+/* City page */
 .main-page-city {
   display: flex;
   flex-direction: column;
@@ -237,7 +24,7 @@ footer p {
 }
 
 .return{
-  margin-right: 80vw;
+  margin-right: 85vw;
   font-size: 22px;
 }
 
@@ -351,7 +138,7 @@ footer p {
 }
 
 .create{
-  margin-left: 80vw;
+  margin-left: 85vw;
   font-size: 22px;
 }
 
@@ -371,6 +158,110 @@ footer p {
   transform: scale(1.2);
 }
 
+/* Info page */
+.text-info h3, .text-info p, .text-info button{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.submit-info h3{
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+}
+
+.info-page{
+  display: flex;
+  align-items: center;
+}
+
+.info-page h2{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.info-page img{
+  width: 100px;
+}
+
+.logo-text a{
+  text-decoration: none;
+}
+
+.card-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+
+.primary-card-info {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  height: 60vh;
+  background-color: #ffffff77;
+  border-radius: 15px;
+  box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25)
+}
+
+.text-info{
+  width: 80%;
+  height: 100%;
+  text-align: justify;
+  align-content: space-around;
+}
+
+strong{
+  font-weight: 550;
+}
+
+.submit-info{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-info h3{
+  width: 50%;
+}
+
+.submit-info button{
+  background-color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 0 10px 0;
+  border-radius: 20px;
+  width: 350px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  box-shadow: inset -3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.submit-info button:hover{
+  background-color: #eeeeee;
+  transform: scale(1.1);
+}
+
+.submit-info button a{
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Login */
 .main-login {
   display: flex;
   flex-direction: column;
@@ -532,105 +423,229 @@ label img{
       margin-top: 80px;
   }
 }
-/**/
-.text-info h3, .text-info p, .text-info button{
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 26px;
-}
 
-.submit-info h3{
-  font-size: 26px;
-  font-weight: 400;
-}
-
-.main-info {
+/* Map */
+.main-page {
   display: flex;
   flex-direction: column;
-  height: 98vh;
-}
-
-.info-page{
-  display: flex;
   align-items: center;
-}
-
-.info-page h2{
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 24px;
+  width: 98vw;
+  height: 98.3vh;
   color: #ffffff;
 }
 
-.info-page img{
-  width: 100px;
-}
-
-.logo-text a{
-  text-decoration: none;
-}
-
-.card-info{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 98vh;
-}
-
-.primary-card-info {
-  overflow: hidden;
+.map {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 70vw;
-  height: 60vh;
-  background-color: #ffffff77;
-  border-radius: 15px;
-  box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25)
+  margin-bottom: 50px;
 }
 
-.text-info{
-  width: 80%;
-  height: 100%;
-  text-align: justify;
-  align-content: space-around;
+.map-title {
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-strong{
-  font-weight: 550;
+path {
+  stroke: #ffffff;
+  stroke-width: 0.5px;
 }
 
-.submit-info{
-  width: 80%;
+.map h1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.map text {
+  font-size: 12px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+#Jaragua,
+#Corupa,
+#Schroeder,
+#Itaperiu,
+#Barra,
+#Guaramirim,
+#Massaranduba {
+  fill: #ffffff1c;
+  transition: 0.3s;
+}
+
+#Jaragua:hover {
+  fill: #86c126;
+  stroke-width: 0;
+  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+
+#Itaperiu:hover {
+  fill: #f8931f;
+  stroke-width: 0;
+  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+
+#Barra:hover {
+  fill: #005198;
+  stroke-width: 0;
+  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+
+#Guaramirim:hover {
+  fill: #1480c0;
+  stroke-width: 0;
+  filter: drop-shadow(4px -4px 3px rgba(0, 0, 0, 0.25));
+}
+
+#Corupa:hover {
+  fill: #f8c401;
+  stroke-width: 0;
+  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+
+#Schroeder:hover {
+  fill: #01923f;
+  stroke-width: 0;
+  filter: drop-shadow(4px -4px 3px rgba(0, 0, 0, 0.25));
+}
+
+#Massaranduba:hover {
+  fill: #e62e2e;
+  stroke-width: 0;
+  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+
+text {
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-page {
+    height: 97.9vh;
+  }
+
+  .map-title {
+    margin-top: -20px;
+  }
+
+  svg {
+    width: 50vw;
+  }
+}
+
+/* Navbar */
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-black {
+  width: 97vw;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-black a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar-black h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  margin-right: 2vw;
+}
+
+.navbar-black h2 {
+  font-weight: 400;
+}
+
+.navbar {
+  width: 97vw;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.navbar h2 {
+  font-weight: 400;
+}
+
+.content-nav {
+  width: 92vw;
+  height: 5vh;
   display: flex;
   justify-content: space-between;
+}
+
+.content-nav #login {
+  width: 35px;
+}
+
+.content-nav #white-logo {
+  width: 70px;
+}
+
+.logo-dash {
+  display: flex;
   align-items: center;
 }
 
-.submit-info h3{
-  width: 50%;
-}
-
-.submit-info button{
-  background-color: #ffffff;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 10px 0 10px 0;
-  border-radius: 20px;
-  width: 350px;
-  border: none;
-  cursor: pointer;
+#dash {
+  margin-left: 10px;
   transition: 0.3s;
-  font-size: 20px;
-  box-shadow: inset -3px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
-.submit-info button:hover{
-  background-color: #eeeeee;
-  transform: scale(1.1);
+#dash:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
-.submit-info button a{
+.identity h1 {
   text-decoration: none;
-  color: #000000;
+}
+
+.identity img {
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  width: 98vw;
+  height: 10vh;
+}
+
+footer img {
+  width: 7.3vw;
+  margin-right: 100px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer p {
+  margin-right: 100px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer p, footer img{
+      display: none;
+  }
 }

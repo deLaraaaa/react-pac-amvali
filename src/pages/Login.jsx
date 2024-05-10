@@ -27,7 +27,7 @@ function Login() {
                 </Link>
                 <p id="account">
                   Não possui uma conta?
-                  <Link to="Info"> Leia os requisitos e cadastre-se.</Link>
+                  <Link to="./info"> Leia os requisitos e cadastre-se.</Link>
                 </p>
               </div>
             </div>

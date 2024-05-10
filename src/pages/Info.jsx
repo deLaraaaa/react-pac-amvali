@@ -22,7 +22,7 @@ function Info() {
           <div className="text-info">
             <h3>Consigo visualizar tudo sem uma conta?</h3>
             <p>
-              Sim!, Tudo que disponibilizamos é de
+              Sim! Tudo que disponibilizamos é de
               <strong> DOMÍNIO PÚBLICO </strong> e compartilhado para toda a
               população, temos como objetivo <strong>TRANSPARECER </strong>, de
               forma simples, intuitiva e criativa, os <strong>PLANOS </strong>
@@ -32,7 +32,7 @@ function Info() {
           </div>
           <div className="submit-info">
             <h3>Ainda precisa de uma conta?</h3>
-            <Link to="../Registro">
+            <Link to="../registro">
               <button>CADASTRE-SE</button>
             </Link>
           </div>

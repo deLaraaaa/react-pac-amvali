@@ -17,16 +17,16 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Corupa" element={<Corupa />} />
-        <Route path="/Jaragua" element={<Jaragua />} />
-        <Route path="/Schroeder" element={<Schroeder />} />
-        <Route path="/Guaramirim" element={<Guaramirim />} />
-        <Route path="/Massaranduba" element={<Massaranduba />} />
-        <Route path="/Itaperiu" element={<Itaperiu />} />
-        <Route path="/BarraVelha" element={<BarraVelha />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Login/Info" element={<Info />} />
-        <Route path="/Registro" element={<Registro />} />
+        <Route path="/corupa" element={<Corupa />} />
+        <Route path="/jaragua-do-sul" element={<Jaragua />} />
+        <Route path="/schroeder" element={<Schroeder />} />
+        <Route path="/guaramirim" element={<Guaramirim />} />
+        <Route path="/massaranduba" element={<Massaranduba />} />
+        <Route path="/sao-joao-do-itaperiu" element={<Itaperiu />} />
+        <Route path="/barra-velha" element={<BarraVelha />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/login/info" element={<Info />} />
+        <Route path="/registro" element={<Registro />} />
       </Routes>
     </Router>
   );

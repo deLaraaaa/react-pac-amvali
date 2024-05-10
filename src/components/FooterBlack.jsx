@@ -4,7 +4,9 @@ function FooterBlack(){
     return (
         <footer>
             <div>
+            <a href="https://amvali.org.br/" target="_blank" rel="noopener noreferrer">
                 <img src="/img/Logo AMV Black.png" alt="Amvali Black Logo" />
+            </a>
             </div>
             <div className="footer-text">
                 <p>CNPJ 83.784.090/0001-86</p>
