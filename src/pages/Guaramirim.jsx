@@ -22,6 +22,11 @@ export function Guaramirim() {
         <Card />
         <Card />
       </div>
+      <div className="create">
+        <Link to="./criar-plano">
+          <p>CRIAR PLANO →</p>
+        </Link>
+      </div>
       <FooterBlack />
     </div>
   );

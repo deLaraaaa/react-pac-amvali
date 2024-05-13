@@ -8,7 +8,7 @@ import Card from "../components/Card";
 export function Jaragua() {
   return (
     <div className="main-page-city">
-      <Helmet bodyAttributes={{style: "background-color: #F8F8F8;"}} />
+      <Helmet bodyAttributes={{ style: "background-color: #F8F8F8;" }} />
       <HeaderBlack />
       <div className="return">
         <Link to="/">
@@ -26,7 +26,7 @@ export function Jaragua() {
         <Card />
       </div>
       <div className="create">
-        <Link to="/">
+        <Link to="./criar-plano">
           <p>CRIAR PLANO →</p>
         </Link>
       </div>
