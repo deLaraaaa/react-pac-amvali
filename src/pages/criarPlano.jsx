@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import HeaderBlack from "../components/HeaderBlack";
 import Tabs from "../components/Tabs";
-import CountyData from '../utils/countyData';
+import CountyData from "../utils/countyData";
 
 function CriarPlano() {
   const { pageReturn } = CountyData();

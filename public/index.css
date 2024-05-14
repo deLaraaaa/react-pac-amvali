@@ -665,7 +665,7 @@ footer p {
 }
 
 /* Tabs */
-.tab-form{
+.tab-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -688,7 +688,6 @@ footer p {
 .tabs {
   max-width: 1065px;
   background: #e5e5e5;
-  
 }
 
 .input-tab {
@@ -750,7 +749,7 @@ footer p {
   display: block;
 }
 
-.tab-principals{
+.tab-principals {
   display: flex;
   justify-content: space-between;
 }
@@ -763,7 +762,7 @@ footer p {
   box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.tab-plan-name{
+.tab-plan-name {
   width: 450px;
   height: 30px;
   border-radius: 5px;
@@ -774,7 +773,7 @@ footer p {
   font-size: 20px;
 }
 
-.tab-plan-tittle{
+.tab-plan-tittle {
   width: 350px;
   height: 30px;
   border-radius: 5px;
@@ -785,7 +784,7 @@ footer p {
   font-size: 20px;
 }
 
-.tab-plan{
+.tab-plan {
   width: 1000px;
   height: 200px;
   border-radius: 5px;
@@ -796,25 +795,25 @@ footer p {
   font-size: 20px;
 }
 
-.tab-plan-name:focus{
+.tab-plan-name:focus {
   outline: none;
 }
 
-.tab-plan-tittle:focus{
+.tab-plan-tittle:focus {
   outline: none;
 }
 
-.tab-plan:focus{
+.tab-plan:focus {
   outline: none;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.input-container{
+.input-container {
   margin-top: 50px;
 }
 
@@ -826,7 +825,7 @@ input[type="text"] {
 }
 
 input:focus {
-  outline: 1.5px solid #00801A;
+  outline: 1.5px solid #00801a;
 }
 
 .delete-btn {
@@ -854,9 +853,9 @@ input:focus {
   gap: 10px;
   font-size: 15px;
   font-weight: 500;
-  color: #00801A;
+  color: #00801a;
   background-color: #ffffff;
-  border: 1.5px solid #00801A;
+  border: 1.5px solid #00801a;
   border-radius: 5px;
   padding: 6px 20px;
   margin-top: 20px;
@@ -864,8 +863,7 @@ input:focus {
   cursor: pointer;
 }
 
-
 .add-btn:hover {
   color: #ffffff;
-  background-color: #00801A;
+  background-color: #00801a;
 }

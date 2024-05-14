@@ -35,7 +35,8 @@ function AddPlan() {
             value={inputField.value}
             onChange={(e) => handleValueChange(inputField.id, e)}
           />
-          <button type="button"
+          <button
+            type="button"
             className="delete-btn"
             onClick={() => handleRemoveFields(inputField.id)}
           >

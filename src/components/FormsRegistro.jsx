@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import view_eye from "./assets/view.png"
-import hide_eye from "./assets/hide.png"
+import view_eye from "./assets/view.png";
+import hide_eye from "./assets/hide.png";
 
 function FormsRegistro() {
   const [showPassword, setShowPassword] = useState(false);

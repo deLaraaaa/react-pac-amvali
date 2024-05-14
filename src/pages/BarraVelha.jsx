@@ -8,7 +8,7 @@ import Card from "../components/Card";
 export function BarraVelha() {
   return (
     <div className="main-page-city">
-      <Helmet bodyAttributes={{style: "background-color: #F8F8F8;"}} />
+      <Helmet bodyAttributes={{ style: "background-color: #F8F8F8;" }} />
       <HeaderBlack />
       <div className="return">
         <Link to="/">

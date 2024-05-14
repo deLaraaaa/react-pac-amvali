@@ -6,7 +6,7 @@ import HeaderLogin from "../components/HeaderLogin";
 function Info() {
   return (
     <div className="main-info">
-      <Helmet bodyAttributes={{style: "background-color: #F8C401;"}} />
+      <Helmet bodyAttributes={{ style: "background-color: #F8C401;" }} />
       <HeaderLogin />
       <div className="card-info">
         <div id="card" className="primary-card-info">

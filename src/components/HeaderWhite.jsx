@@ -8,26 +8,28 @@ function HeaderWhite() {
     <nav className="navbar">
       <div className="content-nav">
         <div className="logo-dash">
-        <a href="https://amvali.org.br/" target="_blank" rel="noopener noreferrer">
-          <img
-            id="white-logo"
-            src={white_logo}
-            alt="White logo Amvali"
-          />
+          <a
+            href="https://amvali.org.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img id="white-logo" src={white_logo} alt="White logo Amvali" />
           </a>
         </div>
         <div className="identity">
           <h1>
-            <a href="https://amvali.org.br/" target="_blank" rel="noopener noreferrer">AMVALI</a>
+            <a
+              href="https://amvali.org.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AMVALI
+            </a>
           </h1>
         </div>
         <div>
           <Link to="login">
-            <img
-              id="login"
-              src={avatar_login}
-              alt="Login Avatar"
-            />
+            <img id="login" src={avatar_login} alt="Login Avatar" />
           </Link>
         </div>
       </div>

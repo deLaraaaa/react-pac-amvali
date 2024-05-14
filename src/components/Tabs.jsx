@@ -32,70 +32,78 @@ function Tabs() {
         }}
       />
       <form method="post" className="tab-form">
-      <input class="input-tab" name="tabs" type="radio" id="tab-1" />
-      <label class="label-tab" for="tab-1">
-        APRESENTAÇÃO
-      </label>
-      <div class="panel">
-        <h1>APRESENTAÇÃO</h1>
-        <div className="tab-principals">
-          <div className="tab-name">
-            <p>Nome do Plano</p>
-            <textarea
-              className="tab-plan-name"
-              placeholder="Insira o texto..."
-            />
+        <input class="input-tab" name="tabs" type="radio" id="tab-1" />
+        <label class="label-tab" for="tab-1">
+          APRESENTAÇÃO
+        </label>
+        <div class="panel">
+          <h1>APRESENTAÇÃO</h1>
+          <div className="tab-principals">
+            <div className="tab-name">
+              <p>Nome do Plano</p>
+              <textarea
+                className="tab-plan-name"
+                placeholder="Insira o texto..."
+              />
+            </div>
+            <div>
+              <p>Início do Prazo</p>
+              <input type="date" className="date" />
+            </div>
+            <div>
+              <p>Término do Prazo</p>
+              <input type="date" className="date" />
+            </div>
           </div>
-          <div>
-            <p>Início do Prazo</p>
-            <input type="date" className="date" />
-          </div>
-          <div>
-            <p>Término do Prazo</p>
-            <input type="date" className="date" />
-          </div>
+          <p>Introdução</p>
+          <textarea className="tab-plan" placeholder="Insira o texto..." />
+          <AddPlan />
         </div>
-        <p>Introdução</p>
-        <textarea className="tab-plan" placeholder="Insira o texto..." />
-        <AddPlan />
-      </div>
-      <input class="input-tab" name="tabs" type="radio" id="tab-2" />
-      <label class="label-tab" for="tab-2">
-        NOME DO PLANO
-      </label>
-      <div class="panel">
-        <h1>NOME DO PLANO</h1>
-        <p>Nome do Plano</p>
-        <textarea className="tab-plan-name" />
-        <p>Introdução</p>
-        <textarea className="tab-plan" />
-        <AddPlan />
-      </div>
-      <input class="input-tab" name="tabs" type="radio" id="tab-3" />
-      <label class="label-tab" for="tab-3">
-        AÇÕES
-      </label>
-      <div class="panel">
-        <h1>AÇÕES</h1>
-        <p>Nome do Plano</p>
-        <textarea className="tab-plan-name" />
-        <p>Introdução</p>
-        <textarea className="tab-plan" />
-        <AddPlan />
-      </div>
-      <input class="input-tab" name="tabs" type="radio" id="tab-4" />
-      <label class="label-tab" for="tab-4">
-        BIBLIOTECA
-      </label>
-      <div class="panel">
-        <h1>BIBLIOTECA</h1>
-        <p>Nome do Plano</p>
-        <textarea className="tab-plan-name" />
-        <p>Introdução</p>
-        <textarea className="tab-plan" />
-      </div>
-      <input className="input-tab" name="tabs" type="submit" id="tab-5" value="ADICIONAR PLANO"/>
-      <label class="label-tab" for="tab-5">ADICIONAR PLANO</label>
+        <input class="input-tab" name="tabs" type="radio" id="tab-2" />
+        <label class="label-tab" for="tab-2">
+          NOME DO PLANO
+        </label>
+        <div class="panel">
+          <h1>NOME DO PLANO</h1>
+          <p>Nome do Plano</p>
+          <textarea className="tab-plan-name" />
+          <p>Introdução</p>
+          <textarea className="tab-plan" />
+          <AddPlan />
+        </div>
+        <input class="input-tab" name="tabs" type="radio" id="tab-3" />
+        <label class="label-tab" for="tab-3">
+          AÇÕES
+        </label>
+        <div class="panel">
+          <h1>AÇÕES</h1>
+          <p>Nome do Plano</p>
+          <textarea className="tab-plan-name" />
+          <p>Introdução</p>
+          <textarea className="tab-plan" />
+          <AddPlan />
+        </div>
+        <input class="input-tab" name="tabs" type="radio" id="tab-4" />
+        <label class="label-tab" for="tab-4">
+          BIBLIOTECA
+        </label>
+        <div class="panel">
+          <h1>BIBLIOTECA</h1>
+          <p>Nome do Plano</p>
+          <textarea className="tab-plan-name" />
+          <p>Introdução</p>
+          <textarea className="tab-plan" />
+        </div>
+        <input
+          className="input-tab"
+          name="tabs"
+          type="submit"
+          id="tab-5"
+          value="ADICIONAR PLANO"
+        />
+        <label class="label-tab" for="tab-5">
+          ADICIONAR PLANO
+        </label>
       </form>
     </div>
   );

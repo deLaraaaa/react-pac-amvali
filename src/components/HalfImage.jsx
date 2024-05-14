@@ -1,5 +1,5 @@
 import React from "react";
-import half_image from "./assets/Logo AMV Grey.png"
+import half_image from "./assets/Logo AMV Grey.png";
 
 function HalfImage() {
   return (

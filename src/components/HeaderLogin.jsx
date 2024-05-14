@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import white_logo from "./assets/Logo AMV White.png"
+import white_logo from "./assets/Logo AMV White.png";
 
 function HeaderLogin() {
   return (

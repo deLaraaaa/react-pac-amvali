@@ -8,7 +8,7 @@ import HalfImage from "../components/HalfImage";
 function Login() {
   return (
     <div className="main-login">
-      <Helmet bodyAttributes={{style: 'background-color : #F8C401'}} />
+      <Helmet bodyAttributes={{ style: "background-color : #F8C401" }} />
       <HeaderLogin />
       <div className="card-principal-login">
         <div id="card" className="card-login">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 function Map() {
   useEffect(() => {
@@ -87,6 +87,6 @@ function Map() {
       </svg>
     </div>
   );
-};
+}
 
 export default Map;
