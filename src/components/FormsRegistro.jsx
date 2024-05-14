@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import view_eye from "./assets/view.png"
+import hide_eye from "./assets/hide.png"
 
 function FormsRegistro() {
   const [showPassword, setShowPassword] = useState(false);
@@ -33,7 +35,7 @@ function FormsRegistro() {
         />
         <span>Senha...</span>
         <img
-          src={showPassword ? "/img/view.png" : "/img/hide.png"}
+          src={showPassword ? view_eye : hide_eye}
           alt="Esconder Senha"
           id="togglePassword"
           style={{ width: "30px", cursor: "pointer" }}
@@ -51,7 +53,7 @@ function FormsRegistro() {
         />
         <span>Confirmar Senha...</span>
         <img
-          src={showConfirmPassword ? "/img/view.png" : "/img/hide.png"}
+          src={showConfirmPassword ? view_eye : hide_eye}
           alt="Esconder Senha"
           id="toggleConfirmPassword"
           style={{ width: "30px", cursor: "pointer" }}

@@ -21,7 +21,7 @@ function CountyData(){
         case "/schroeder":
             pageTitle = "SCHROEDER";
             pageLink = "https://schroeder.sc.gov.br/";
-            countyShield = "/img/800px-Schroeder-removebg-preview.png"
+            countyShield = "https://www.energiaconcursos.com.br/wp-content/uploads/2016/05/schoreder.png";
             break;
         case "/guaramirim":
             pageTitle = "GUARAMIRIM";
@@ -58,7 +58,7 @@ function CountyData(){
         case "/schroeder/criar-plano":
             pageTitle = "SCHROEDER";
             pageLink = "https://schroeder.sc.gov.br/";
-            countyShield = "/img/800px-Schroeder-removebg-preview.png"
+            countyShield = "https://www.energiaconcursos.com.br/wp-content/uploads/2016/05/schoreder.png";
             pageReturn = "../schroeder";
             break;
         case "/guaramirim/criar-plano":

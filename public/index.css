@@ -597,7 +597,7 @@ text {
 }
 
 .content-nav #white-logo {
-  width: 70px;
+  width: 80px;
 }
 
 .logo-dash {
@@ -830,8 +830,8 @@ input:focus {
 }
 
 .delete-btn {
-  width: 60px;
-  height: 20px;
+  width: 70px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;

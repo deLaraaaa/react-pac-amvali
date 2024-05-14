@@ -1,11 +1,12 @@
 import React from "react";
+import black_logo from "./assets/Logo AMV Black.png";
 
 function FooterBlack(){
     return (
         <footer>
             <div>
             <a href="https://amvali.org.br/" target="_blank" rel="noopener noreferrer">
-                <img src="/img/Logo AMV Black.png" alt="Amvali Black Logo" />
+                <img src={black_logo} alt="Amvali Black Logo" />
             </a>
             </div>
             <div className="footer-text">

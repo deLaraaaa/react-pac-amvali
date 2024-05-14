@@ -1,31 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
+import AddPlan from "./addPlan.jsx";
 
 function Tabs() {
-  const [inputFields, setInputFields] = useState([
-    { id: Math.random(), value: "" },
-  ]);
-
-  // Function to add a new input field
-  const handleAddFields = () => {
-    setInputFields([...inputFields, { id: Math.random(), value: "" }]);
-  };
-
-  // Function to remove an input field by id
-  const handleRemoveFields = (id) => {
-    const values = [...inputFields];
-    const newValues = values.filter((value) => value.id !== id);
-    setInputFields(newValues);
-  };
-
-  // Function to update the value of an input field
-  const handleValueChange = (id, event) => {
-    const newInputFields = [...inputFields];
-    const index = newInputFields.findIndex((x) => x.id === id);
-    newInputFields[index].value = event.target.value;
-    setInputFields(newInputFields);
-  };
-
   var textareas = document.getElementsByTagName("textarea");
   var count = textareas.length;
   for (var i = 0; i < count; i++) {
@@ -54,7 +31,7 @@ function Tabs() {
           },
         }}
       />
-      <form action="" method="post" className="tab-form">
+      <form method="post" className="tab-form">
       <input class="input-tab" name="tabs" type="radio" id="tab-1" />
       <label class="label-tab" for="tab-1">
         APRESENTAÇÃO
@@ -80,36 +57,7 @@ function Tabs() {
         </div>
         <p>Introdução</p>
         <textarea className="tab-plan" placeholder="Insira o texto..." />
-        <div className="container">
-          {inputFields.map((inputField) => (
-            <div className="input-container" key={inputField.id}>
-              <textarea
-                placeholder="Insira o subtítulo..."
-                className="tab-plan-tittle"
-              />
-              <textarea
-                placeholder="Insira o texto..."
-                className="tab-plan"
-                value={inputField.value}
-                onChange={(e) => handleValueChange(inputField.id, e)}
-              />
-              <button
-                className="delete-btn"
-                onClick={() => handleRemoveFields(inputField.id)}
-              >
-                <span class="material-symbols-outlined delete-icon">
-                  DELETE
-                </span>
-              </button>
-            </div>
-          ))}
-          <button className="add-btn" onClick={handleAddFields}>
-            <span class="material-symbols-outlined add-icon">
-              ADICIONAR CAMPO
-            </span>
-          </button>
-          
-        </div>
+        <AddPlan />
       </div>
       <input class="input-tab" name="tabs" type="radio" id="tab-2" />
       <label class="label-tab" for="tab-2">
@@ -121,6 +69,7 @@ function Tabs() {
         <textarea className="tab-plan-name" />
         <p>Introdução</p>
         <textarea className="tab-plan" />
+        <AddPlan />
       </div>
       <input class="input-tab" name="tabs" type="radio" id="tab-3" />
       <label class="label-tab" for="tab-3">
@@ -132,6 +81,7 @@ function Tabs() {
         <textarea className="tab-plan-name" />
         <p>Introdução</p>
         <textarea className="tab-plan" />
+        <AddPlan />
       </div>
       <input class="input-tab" name="tabs" type="radio" id="tab-4" />
       <label class="label-tab" for="tab-4">

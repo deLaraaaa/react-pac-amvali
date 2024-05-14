@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import CountyData from '../utils/countyData';
+import black_logo from "./assets/Logo AMV Black.png";
+import avatar_login from "./assets/AvatarBlack.png";
 
-function HeaderBlack(props) {
+function HeaderBlack() {
   const { pageTitle, pageLink, countyShield } = CountyData();
   return (
     <nav className="navbar-black">
@@ -11,7 +13,7 @@ function HeaderBlack(props) {
           <Link to="/">
           <img
             id="black-logo"
-            src="/img/Logo AMV Black.png"
+            src={black_logo}
             alt="Amvali Black Logo"
             width="80px"
           />
@@ -21,11 +23,11 @@ function HeaderBlack(props) {
           <h1>
             <a href={pageLink} target="_blank" rel="noopener noreferrer">{pageTitle}</a>
           </h1>
-          <a href="{pageLink}"><img src={countyShield} alt="Shield's County" width="35px"/></a>
+          <a href={pageLink}><img src={countyShield} alt="Shield's County" width="35px"/></a>
         </div>
         <div>
           <Link to="../login">
-            <img id="login" src="/img/AvatarBlack.png" alt="Login Avatar" />
+            <img id="login" src={avatar_login} alt="Login Avatar" />
           </Link>
         </div>
       </div>

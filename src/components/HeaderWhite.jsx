@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import white_logo from "./assets/Logo AMV White.png";
+import avatar_login from "./assets/AvatarWhite.png";
 
 function HeaderWhite() {
   return (
@@ -9,9 +11,8 @@ function HeaderWhite() {
         <a href="https://amvali.org.br/" target="_blank" rel="noopener noreferrer">
           <img
             id="white-logo"
-            src="/img/Logo AMV White.png"
-            alt="Amvali White Logo"
-            width="80px"
+            src={white_logo}
+            alt="White logo Amvali"
           />
           </a>
         </div>
@@ -24,7 +25,7 @@ function HeaderWhite() {
           <Link to="login">
             <img
               id="login"
-              src="/img/AvatarWhite.png"
+              src={avatar_login}
               alt="Login Avatar"
             />
           </Link>
