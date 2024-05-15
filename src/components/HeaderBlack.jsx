@@ -25,7 +25,7 @@ function HeaderBlack() {
               {pageTitle}
             </a>
           </h1>
-          <a href={pageLink}>
+          <a href={pageLink} target="_blank" rel="noopener noreferrer">
             <img src={countyShield} alt="Shield's County" width="35px" />
           </a>
         </div>
