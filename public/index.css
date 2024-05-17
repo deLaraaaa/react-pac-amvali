@@ -883,7 +883,7 @@ input:focus {
   background-color: #00801a;
 }
 
-/*Para celular*/
+/* Para celular */
 @media screen and (max-width: 600px) {
   .navbar a {
     font-family: "Montserrat";
@@ -988,7 +988,7 @@ input:focus {
   }
 }
 
-/*Monitores de 1920x1080*/
+/* Monitores de 1920x1080 */
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
   .navbar a {
     font-family: "Montserrat";
