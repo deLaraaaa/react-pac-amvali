@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import AddPlan from "./addPlan.jsx";
+import AddImage from "./AddImage.jsx";
 import Dropdown from "./Dropdown.jsx";
 
 function Tabs() {
+  const [planName, setPlanName] = useState("");
+
+  const handlePlanNameChange = (event) => {
+    setPlanName(event.target.value);
+  };
+
+  const [planDescription, setPlanDescription] = useState("");
+
+  const handlePlanDescriptionChange = (event) => {
+    setPlanDescription(event.target.value);
+  };
+
   var textareas = document.getElementsByTagName("textarea");
   var count = textareas.length;
   for (var i = 0; i < count; i++) {
@@ -19,6 +32,7 @@ function Tabs() {
       }
     };
   }
+
   return (
     <div class="tabs">
       <Helmet
@@ -45,6 +59,8 @@ function Tabs() {
               <textarea
                 className="tab-plan-name"
                 placeholder="Insira o texto..."
+                value={planName}
+                onChange={handlePlanNameChange}
               />
             </div>
             <div>
@@ -56,10 +72,16 @@ function Tabs() {
               <input type="date" className="date" />
             </div>
           </div>
-          <Dropdown />
           <p>Introdução</p>
-          <textarea className="tab-plan" placeholder="Insira o texto..." />
+          <textarea
+            className="tab-plan"
+            placeholder="Insira o texto..."
+            value={planDescription}
+            onChange={handlePlanDescriptionChange}
+          />
+          <Dropdown planName={planName} planDescription={planDescription}/>
           <AddPlan />
+          <AddImage />
         </div>
         <input class="input-tab" name="tabs" type="radio" id="tab-2" />
         <label class="label-tab" for="tab-2">

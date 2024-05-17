@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import FileInput from "./FileInput";
 
-function AddPlan() {
+function AddImage() {
   const [inputFields, setInputFields] = useState([
-    { id: Math.random(), value: "" },
+    { id: Math.random(), value: null },
   ]);
 
   const handleAddFields = () => {
-    setInputFields([...inputFields, { id: Math.random(), value: "" }]);
+    setInputFields([...inputFields, { id: Math.random(), value: null }]);
   };
 
   const handleRemoveFields = (id) => {
@@ -18,23 +19,16 @@ function AddPlan() {
   const handleValueChange = (id, event) => {
     const newInputFields = [...inputFields];
     const index = newInputFields.findIndex((x) => x.id === id);
-    newInputFields[index].value = event.target.value;
+    newInputFields[index].value = URL.createObjectURL(event.target.files[0]);
     setInputFields(newInputFields);
   };
+
   return (
     <div className="container">
       {inputFields.map((inputField) => (
         <div className="input-container" key={inputField.id}>
-          <textarea
-            placeholder="Insira o subtítulo..."
-            className="tab-plan-tittle"
-          />
-          <textarea
-            placeholder="Insira o texto..."
-            className="tab-plan"
-            value={inputField.value}
-            onChange={(e) => handleValueChange(inputField.id, e)}
-          />
+          <FileInput />
+          {inputField.value && <img src={inputField.value} alt="preview" />}
           <button
             type="button"
             className="delete-btn"
@@ -44,11 +38,11 @@ function AddPlan() {
           </button>
         </div>
       ))}
-      <button type="button" className="add-btn" onClick={handleAddFields}>
-        <span className="">ADICIONAR TEXTO</span>
+      <button type="button" className="add-btn-img" onClick={handleAddFields}>
+        <span className="material-symbols-outlined">upload_file</span>ADICIONAR IMAGEM
       </button>
     </div>
   );
 }
 
-export default AddPlan;
+export default AddImage;
