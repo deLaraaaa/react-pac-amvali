@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BookSvg from "./assets/BookSvg";
+import BookSvg from "./BookSvg";
 import TreeSvg from "./assets/TreeSvg";
 import MountainSvg from "./assets/MountainSvg";
 import RecycleSvg from "./assets/RecycleSvg";
@@ -12,7 +12,7 @@ function Card() {
   return (
     <div className="card">
       <Link to="">
-        <TerritorySvg />
+        <BookSvg />
         <div className="text">
           <div className="card-title">
             <h2>PLANO DIRETOR</h2>

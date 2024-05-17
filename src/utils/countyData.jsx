@@ -52,7 +52,7 @@ function CountyData() {
       break;
     case "/corupa/criar-plano":
       pageTitle = "CORUPÁ";
-      pageLink = "https://corupa.atende.net/cidadao";
+      pageLink = "https://servicos.corupa.sc.gov.br/";
       countyShield =
         "https://upload.wikimedia.org/wikipedia/commons/6/60/Bras%C3%A3o_do_munic%C3%ADpio_de_Corup%C3%A1_%28SC%29.png";
       pageReturn = "../corupa";
