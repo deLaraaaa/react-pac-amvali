@@ -836,6 +836,10 @@ input:focus {
   outline: 1.5px solid #00801a;
 }
 
+.dropdown-img{
+  margin-left: 70px;
+}
+
 .delete-btn {
   width: 70px;
   height: 30px;
