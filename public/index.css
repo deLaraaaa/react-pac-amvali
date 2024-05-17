@@ -807,6 +807,21 @@ footer p {
   outline: none;
 }
 
+/* Dropdown */
+.dropdown {
+  font-family: "Montserrat";
+  width: 250px;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -866,4 +881,202 @@ input:focus {
 .add-btn:hover {
   color: #ffffff;
   background-color: #00801a;
+}
+
+/*Para celular*/
+@media screen and (max-width: 600px) {
+  .navbar a {
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .navbar {
+    opacity: 0;
+    transition: 0.3s;
+    background-color: #008040;
+    width: 100%;
+    height: 30px; /* Reduzindo ainda mais a altura */
+    border-radius: 5px; /* Reduzindo o raio do border-radius */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  .navbar:hover {
+    opacity: 1;
+  }
+
+  .navbar h1 {
+    font-size: 10px; /* Reduzindo ainda mais o tamanho do texto */
+    font-family: "Montserrat";
+    font-weight: 600;
+  }
+
+  .navbar h2 {
+    font-family: "Montserrat";
+    font-weight: 500;
+  }
+
+  .navbar:hover {
+    opacity: 1;
+  }
+
+  .content-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .content-nav #avatar {
+    width: 20px;
+  }
+
+  .content-nav #white-logo {
+    width: 30px;
+    padding-right: 20px;
+  }
+
+  #dash {
+    margin-left: 1px;
+    font-size: 12px;
+  }
+
+  .identity h1 {
+    margin-right: 0.5vw; /* Ajustando a margem */
+  }
+
+  #dash:hover {
+    transform: scale(1.2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .identity h1 {
+    text-decoration: none;
+    margin-right: 2vw; /* Reduzido ainda mais o espaço à direita */
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap; /* Adiciona quebra de linha quando o conteúdo não couber */
+    width: 100%; /* Alterado para ocupar 100% da largura */
+    height: auto; /* Altura automática */
+    justify-content: space-between; /* Distribui os elementos */
+  }
+
+  footer img {
+    width: 30px; /* Reduzindo ainda mais o tamanho da imagem */
+    margin-right: 1px; /* Ajustando a margem */
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer p {
+    margin-right: 5px; /* Reduzido ainda mais o espaçamento à direita */
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+/*Monitores de 1920x1080*/
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .navbar a {
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .navbar {
+    opacity: 1;
+    background-color: #008040;
+    width: 97vw;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+  .navbar h1 {
+    font-size: 35px;
+    font-family: "Montserrat";
+    font-weight: 600;
+  }
+
+  .navbar h2 {
+    font-family: "Montserrat";
+    font-weight: 500;
+  }
+
+  .content-nav {
+    width: 92vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content-nav #avatar {
+    width: 35px;
+  }
+
+  .content-nav #white-logo {
+    width: 70px;
+  }
+
+  .logo-dash {
+    display: flex;
+    align-items: center;
+  }
+
+  #dash {
+    margin-left: 10px;
+    transition: 0.3s;
+  }
+
+  #dash:hover {
+    transform: scale(1.2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .identity h1 {
+    text-decoration: none;
+    margin-right: 11vw;
+  }
+
+  footer {
+    display: flex;
+    width: 98vw;
+    height: 10vh;
+    justify-content: space-between;
+  }
+
+  footer img {
+    width: 140px;
+    margin-right: 100px;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer p {
+    margin-right: 100px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+  }
 }

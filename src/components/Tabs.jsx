@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import AddPlan from "./addPlan.jsx";
+import Dropdown from "./Dropdown.jsx";
 
 function Tabs() {
   var textareas = document.getElementsByTagName("textarea");
@@ -55,6 +56,7 @@ function Tabs() {
               <input type="date" className="date" />
             </div>
           </div>
+          <Dropdown />
           <p>Introdução</p>
           <textarea className="tab-plan" placeholder="Insira o texto..." />
           <AddPlan />
