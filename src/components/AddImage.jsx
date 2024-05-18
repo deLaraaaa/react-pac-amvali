@@ -31,7 +31,7 @@ function AddImage() {
           {inputField.value && <img src={inputField.value} alt="preview" />}
           <button
             type="button"
-            className="delete-btn"
+            className="delete-btn-img"
             onClick={() => handleRemoveFields(inputField.id)}
           >
             <span className="material-symbols-outlined">delete</span>
@@ -39,7 +39,8 @@ function AddImage() {
         </div>
       ))}
       <button type="button" className="add-btn-img" onClick={handleAddFields}>
-        <span className="material-symbols-outlined">upload_file</span>ADICIONAR IMAGEM
+        <span className="material-symbols-outlined">upload_file</span>
+        <p>ADICIONAR IMAGEM</p>
       </button>
     </div>
   );

@@ -45,7 +45,8 @@ function AddPlan() {
         </div>
       ))}
       <button type="button" className="add-btn" onClick={handleAddFields}>
-        <span className="">ADICIONAR TEXTO</span>
+        <span class="material-symbols-outlined">post_add</span> 
+        <p>ADICIONAR TEXTO</p>
       </button>
     </div>
   );
