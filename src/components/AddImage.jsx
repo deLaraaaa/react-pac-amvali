@@ -39,7 +39,8 @@ function AddImage() {
         </div>
       ))}
       <button type="button" className="add-btn-img" onClick={handleAddFields}>
-        <span className="material-symbols-outlined">upload_file</span>ADICIONAR IMAGEM
+        <span className="material-symbols-outlined">upload_file</span>
+        <p>ADICIONAR IMAGEM</p>
       </button>
     </div>
   );

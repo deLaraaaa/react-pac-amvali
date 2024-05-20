@@ -57,7 +57,7 @@ const FileInput = () => {
         ) : null}
       </div>
       <button type="button" className="file-btn" onClick={onChooseFile}>
-        <span class="material-symbols-outlined">upload</span> Upload File
+        <span class="material-symbols-outlined">upload</span> Inserir Arquivo
       </button>
 
       {selectedFile && (
