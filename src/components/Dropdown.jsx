@@ -23,7 +23,7 @@ function Dropdown({ planName, planDescription }) {
     education: BookSvg,
   };
 
-  const SvgComponent = SVG_MAP[selected] || AmvaliSvg;
+  const SelectedSvg = SVG_MAP[selected];
 
   return (
     <div>
@@ -36,8 +36,6 @@ function Dropdown({ planName, planDescription }) {
         <option value="hidro">Hidro</option>
         <option value="river">Rio</option>
       </select>
-      <div className="dropdown-img">
-      </div>
       <Card planName={planName} selectedValue={selected} planDescription={planDescription}/>
     </div>
   );

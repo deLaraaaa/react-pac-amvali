@@ -9,7 +9,7 @@ import TapSvg from "./assets/TapSvg";
 import TerritorySvg from "./assets/TerritorySvg";
 import AmvaliSvg from "./assets/AmvaliSvg";
 
-function Card({ selectedValue, planName, planDescription="" }) {
+function Card({ selectedValue, planName, planDescription="", maxDescriptionLength=80 }) {
   const SVG_MAP = {
     amvali: AmvaliSvg,
     infra: TerritorySvg,
@@ -17,14 +17,16 @@ function Card({ selectedValue, planName, planDescription="" }) {
     hidro: TapSvg,
     river: RiverSvg,
     education: BookSvg,
-    // Add other mappings if needed
   };
 
   const SvgComponent = SVG_MAP[selectedValue] || AmvaliSvg;
 
-  const truncatedDescription = planDescription && planDescription.length > 80
-    ? planDescription.substring(0, 80) + "..."
-    : planDescription;
+  const defaultDescription = "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, consectetur adipiscing elit, sed do eiusmod tempor, consectetur adipiscing elit, sed do eiusmod tempor, consectetur adipiscing elit, sed do eiusmod tempor";
+  const description = planDescription || defaultDescription;
+
+  const truncatedDescription = description.length > maxDescriptionLength
+    ? description.substring(0, maxDescriptionLength) + "..."
+    : description;
 
   return (
     <div className="card">
@@ -37,8 +39,7 @@ function Card({ selectedValue, planName, planDescription="" }) {
           <div className="card-text">
             <p>
               {(
-                truncatedDescription ||
-                "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+                truncatedDescription || description.substring(0, maxDescriptionLength)
               ).toLowerCase()}
             </p>
           </div>

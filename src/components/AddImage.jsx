@@ -31,7 +31,7 @@ function AddImage() {
           {inputField.value && <img src={inputField.value} alt="preview" />}
           <button
             type="button"
-            className="delete-btn"
+            className="delete-btn-img"
             onClick={() => handleRemoveFields(inputField.id)}
           >
             <span className="material-symbols-outlined">delete</span>

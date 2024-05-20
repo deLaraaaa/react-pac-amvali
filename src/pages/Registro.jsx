@@ -21,10 +21,10 @@ function Registro() {
             <div className="title-login">
               <h1>CADASTRE-SE COM A PERMISSÃO DA AMVALI</h1>
             </div>
-            <FormsRegistro />
+            <FormsRegistro showPassword={showPassword} handleTogglePassword={handleTogglePassword} />
             <div className="submit">
               <div className="enter-button">
-                <button>ENTRAR</button>
+                <button>CADASTRAR-SE</button>
               </div>
               <div className="forgot-pass">
                 <p id="account">

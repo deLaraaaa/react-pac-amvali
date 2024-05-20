@@ -19,11 +19,11 @@ export function Jaragua() {
         <h1>ESCOLHA UM PLANO PARA CONTINUAR</h1>
       </div>
       <div className="card-area">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card maxDescriptionLength={200} />
+        <Card maxDescriptionLength={200} />
+        <Card maxDescriptionLength={200} />
+        <Card maxDescriptionLength={200} />
+        <Card maxDescriptionLength={200} />
       </div>
       <div className="create">
         <Link to="./criar-plano">

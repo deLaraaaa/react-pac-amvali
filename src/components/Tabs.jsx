@@ -3,8 +3,11 @@ import { Helmet } from "react-helmet";
 import AddPlan from "./addPlan.jsx";
 import AddImage from "./AddImage.jsx";
 import Dropdown from "./Dropdown.jsx";
+import AddActions from "./AddActions.jsx";
+import AddURL from "./AddURL.jsx";
 
 function Tabs() {
+
   const [planName, setPlanName] = useState("");
 
   const handlePlanNameChange = (event) => {
@@ -85,27 +88,19 @@ function Tabs() {
         </div>
         <input class="input-tab" name="tabs" type="radio" id="tab-2" />
         <label class="label-tab" for="tab-2">
-          NOME DO PLANO
+        {(planName || "NOME DO PLANO").toUpperCase()}
         </label>
         <div class="panel">
-          <h1>NOME DO PLANO</h1>
-          <p>Nome do Plano</p>
-          <textarea className="tab-plan-name" />
-          <p>Introdução</p>
-          <textarea className="tab-plan" />
+          <h1>{(planName || "NOME DO PLANO").toUpperCase()}</h1>
           <AddPlan />
+          <AddImage />
         </div>
         <input class="input-tab" name="tabs" type="radio" id="tab-3" />
         <label class="label-tab" for="tab-3">
           AÇÕES
         </label>
         <div class="panel">
-          <h1>AÇÕES</h1>
-          <p>Nome do Plano</p>
-          <textarea className="tab-plan-name" />
-          <p>Introdução</p>
-          <textarea className="tab-plan" />
-          <AddPlan />
+          <AddActions />
         </div>
         <input class="input-tab" name="tabs" type="radio" id="tab-4" />
         <label class="label-tab" for="tab-4">
@@ -113,10 +108,8 @@ function Tabs() {
         </label>
         <div class="panel">
           <h1>BIBLIOTECA</h1>
-          <p>Nome do Plano</p>
-          <textarea className="tab-plan-name" />
-          <p>Introdução</p>
-          <textarea className="tab-plan" />
+          <AddImage />
+          <AddURL />
         </div>
         <input
           className="input-tab"
