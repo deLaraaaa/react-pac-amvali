@@ -25,7 +25,8 @@ function AddPlan() {
     <div className="container">
       {inputFields.map((inputField) => (
         <div className="input-container" key={inputField.id}>
-          <textarea
+          <input
+            type="text"
             className="tab-plan-title"
             placeholder="Insira o subtítulo..."
           />
@@ -44,9 +45,12 @@ function AddPlan() {
           </button>
         </div>
       ))}
-      <button type="button" className="add-btn" onClick={handleAddFields}>
-        <span className="">ADICIONAR TEXTO</span>
-      </button>
+      <div className="display-button">
+        <button type="button" className="add-btn" onClick={handleAddFields}>
+          <span class="material-symbols-outlined">description</span>ADICIONAR
+          TEXTO
+        </button>
+      </div>
     </div>
   );
 }

@@ -9,7 +9,12 @@ import TapSvg from "./assets/TapSvg";
 import TerritorySvg from "./assets/TerritorySvg";
 import AmvaliSvg from "./assets/AmvaliSvg";
 
-function Card({ selectedValue, planName, planDescription="", maxDescriptionLength=80 }) {
+function Card({
+  selectedValue,
+  planName,
+  planDescription = "",
+  maxDescriptionLength = 80,
+}) {
   const SVG_MAP = {
     amvali: AmvaliSvg,
     infra: TerritorySvg,
@@ -21,12 +26,14 @@ function Card({ selectedValue, planName, planDescription="", maxDescriptionLengt
 
   const SvgComponent = SVG_MAP[selectedValue] || AmvaliSvg;
 
-  const defaultDescription = "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, consectetur adipiscing elit, sed do eiusmod tempor, consectetur adipiscing elit, sed do eiusmod tempor, consectetur adipiscing elit, sed do eiusmod tempor";
+  const defaultDescription =
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, consectetur adipiscing elit, sed do eiusmod tempor, consectetur adipiscing elit, sed do eiusmod tempor, consectetur adipiscing elit, sed do eiusmod tempor";
   const description = planDescription || defaultDescription;
 
-  const truncatedDescription = description.length > maxDescriptionLength
-    ? description.substring(0, maxDescriptionLength) + "..."
-    : description;
+  const truncatedDescription =
+    description.length > maxDescriptionLength
+      ? description.substring(0, maxDescriptionLength) + "..."
+      : description;
 
   return (
     <div className="card">
@@ -39,15 +46,19 @@ function Card({ selectedValue, planName, planDescription="", maxDescriptionLengt
           <div className="card-text">
             <p>
               {(
-                truncatedDescription || description.substring(0, maxDescriptionLength)
+                truncatedDescription ||
+                description.substring(0, maxDescriptionLength)
               ).toLowerCase()}
             </p>
           </div>
         </div>
         <div className="see-more">
-          <p>
-            Leia mais <b id="arrow">→</b>
-          </p>
+          <div>
+            <p>
+              Leia mais <b id="arrow">→</b>
+            </p>
+          </div>
+          <div className="date"><p>2024 - 2034</p></div>
         </div>
       </Link>
     </div>

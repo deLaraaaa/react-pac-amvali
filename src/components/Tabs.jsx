@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import AddPlan from "./addPlan.jsx";
+import AddPlan from "./AddPlan.jsx";
 import AddImage from "./AddImage.jsx";
 import Dropdown from "./Dropdown.jsx";
 import AddActions from "./AddActions.jsx";
 import AddURL from "./AddURL.jsx";
 
 function Tabs() {
-
   const [planName, setPlanName] = useState("");
 
   const handlePlanNameChange = (event) => {
@@ -37,7 +36,7 @@ function Tabs() {
   }
 
   return (
-    <div class="tabs">
+    <div className="tabs">
       <Helmet
         bodyAttributes={{
           style: {
@@ -50,18 +49,19 @@ function Tabs() {
         }}
       />
       <form method="post" className="tab-form">
-        <input class="input-tab" name="tabs" type="radio" id="tab-1" />
-        <label class="label-tab" for="tab-1">
+        <input className="input-tab" name="tabs" type="radio" id="tab-1" />
+        <label className="label-tab" for="tab-1">
           APRESENTAÇÃO
         </label>
-        <div class="panel">
+        <div className="panel">
           <h1>APRESENTAÇÃO</h1>
           <div className="tab-principals">
             <div className="tab-name">
               <p>Nome do Plano</p>
-              <textarea
+              <input
+                type="text"
                 className="tab-plan-name"
-                placeholder="Insira o texto..."
+                placeholder="Insira o nome..."
                 value={planName}
                 onChange={handlePlanNameChange}
               />
@@ -71,7 +71,7 @@ function Tabs() {
               <input type="date" className="date" />
             </div>
             <div>
-              <p>Término do Prazo</p>
+              <p>Prazo de Vigência</p>
               <input type="date" className="date" />
             </div>
           </div>
@@ -86,41 +86,39 @@ function Tabs() {
           <AddPlan />
           <AddImage />
         </div>
-        <input class="input-tab" name="tabs" type="radio" id="tab-2" />
-        <label class="label-tab" for="tab-2">
-        {(planName || "NOME DO PLANO").toUpperCase()}
+        <input className="input-tab" name="tabs" type="radio" id="tab-2" />
+        <label className="label-tab" for="tab-2">
+          {(planName || "NOME DO PLANO").toUpperCase()}
         </label>
-        <div class="panel">
+        <div className="panel">
           <h1>{(planName || "NOME DO PLANO").toUpperCase()}</h1>
           <AddPlan />
           <AddImage />
         </div>
-        <input class="input-tab" name="tabs" type="radio" id="tab-3" />
-        <label class="label-tab" for="tab-3">
+        <input className="input-tab" name="tabs" type="radio" id="tab-3" />
+        <label className="label-tab" for="tab-3">
           AÇÕES
         </label>
-        <div class="panel">
+        <div className="panel">
           <AddActions />
         </div>
-        <input class="input-tab" name="tabs" type="radio" id="tab-4" />
-        <label class="label-tab" for="tab-4">
+        <input className="input-tab" name="tabs" type="radio" id="tab-4" />
+        <label className="label-tab" for="tab-4">
           BIBLIOTECA
         </label>
-        <div class="panel">
+        <div className="panel">
           <h1>BIBLIOTECA</h1>
           <AddImage />
           <AddURL />
+          <div className="submit-tab">
+            <input
+              className="submit-tab"
+              name="tabs"
+              type="submit"
+              value="ADICIONAR PLANO"
+            />
+          </div>
         </div>
-        <input
-          className="input-tab"
-          name="tabs"
-          type="submit"
-          id="tab-5"
-          value="ADICIONAR PLANO"
-        />
-        <label class="label-tab" for="tab-5">
-          ADICIONAR PLANO
-        </label>
       </form>
     </div>
   );

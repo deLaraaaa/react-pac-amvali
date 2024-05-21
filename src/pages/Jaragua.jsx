@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import FooterBlack from "../components/FooterBlack";
 import HeaderBlack from "../components/HeaderBlack";
 import Card from "../components/Card";
+import FileInput from "../components/FileInput";
 
 export function Jaragua() {
   return (

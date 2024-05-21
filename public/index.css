@@ -93,6 +93,12 @@ body {
   color: #ffffff;
 }
 
+.see-more{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .card:hover .see-more p {
   color: #ffffff;
 }
@@ -125,7 +131,8 @@ body {
 
 .card-text{
   min-width: 100%;
-  text-align: left;
+  /*text-align: left;*/
+  text-align: justify;
 }
 
 .card-text p {
@@ -680,6 +687,7 @@ footer p {
 }
 
 .panel{
+  display: flex;
   width: 100%;
 }
 
@@ -702,8 +710,7 @@ footer p {
 }
 
 .input-tab {
-  position: absolute;
-  opacity: 0;
+  display: none;
 }
 
 .label-tab {
@@ -711,14 +718,15 @@ footer p {
   justify-content: center;
   align-items: center;
   outline: none;
-  width: 100%;
-  padding: 20px 35px;
+  width: auto;
+  padding: 20px 20px;
   background: #e5e5e5;
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
   color: #7f7f7f;
   transition: background 0.1s, color 0.1s;
+  flex-grow: 1;
 }
 
 .label-tab:hover {
@@ -736,6 +744,29 @@ footer p {
 .input-tab:checked + .label-tab {
   background: #fff;
   color: #000;
+}
+
+.submit-tab{
+  display: flex;
+  justify-content: end;
+}
+
+.submit-tab input{
+  background: #e5e5e5;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 20px 70px;
+  font-size: 18px;
+  color: #7f7f7f;
+  transition: background 0.1s, color 0.1s;
+}
+
+.submit-tab input:hover{
+  background: #d8d8d8;
+}
+
+.submit-tab input:active{
+  background: #ccc;
 }
 
 @media (min-width: 600px) {
@@ -767,7 +798,8 @@ footer p {
 
 .tab-principals .date {
   width: 180px;
-  height: 30px;
+  height: 40px;
+  font-family: "Montserrat";
   border-radius: 5px;
   border: none;
   box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
@@ -775,7 +807,7 @@ footer p {
 
 .tab-plan-name {
   width: 450px;
-  height: 30px;
+  height: 15px;
   border-radius: 5px;
   border: none;
   box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
@@ -786,7 +818,8 @@ footer p {
 
 .tab-plan-title {
   width: 350px;
-  height: 30px;
+  height: 15px;
+  margin-bottom: 10px;
   border-radius: 5px;
   border: none;
   box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
@@ -815,7 +848,7 @@ footer p {
   box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
   resize: none;
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .tab-plan-name:focus {
@@ -840,7 +873,7 @@ footer p {
   justify-content: center;
   gap: 15px;
   color: #1480c0;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1.5px dashed #1480c0;
   border-radius: 20px;
   cursor: pointer;
@@ -857,6 +890,16 @@ footer p {
   justify-content: center;
   border-radius: 25px;
   background-color: #b4e4ff;
+  transition: all 0.3s ease;
+}
+
+.file-btn:hover {
+  background-color: #b4e4ff;
+}
+
+.file-btn:hover span{
+  color: #b4e4ff;
+  background-color: #1480c0;
 }
 
 .selected-file {
@@ -948,7 +991,9 @@ input:focus {
 
 .add-btn {
   display: flex;
-  width: 185px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
   gap: 10px;
   font-size: 15px;
   font-weight: 500;
@@ -971,25 +1016,6 @@ input:focus {
   margin-bottom: 15px;
 }
 
-.add-btn-img {
-  display: flex;
-  gap: 10px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #1480c0;
-  background-color: #ffffff;
-  border: 1.5px solid #1480c0;
-  border-radius: 5px;
-  margin-top: 20px;
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
-
-.add-btn-img:hover {
-  color: #ffffff;
-  background-color: #1480c0;
-}
-
 .delete-btn-img {
   width: 70px;
   height: 30px;
@@ -1010,9 +1036,30 @@ input:focus {
   background-color: #ff0000;
 }
 
+.add-btn-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1480c0;
+  background-color: #ffffff;
+  border: 1.5px solid #1480c0;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.add-btn-img:hover {
+  color: #ffffff;
+  background-color: #1480c0;
+}
+
 .add-btn-img p{
   font-size: 15px;
-  margin-bottom: 15px;
 }
 
 .delete-btn-img{
