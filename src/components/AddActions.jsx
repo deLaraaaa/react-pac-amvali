@@ -25,13 +25,13 @@ function AddActions() {
   };
 
   return (
-    
     <div className="container-action">
       <h1>{(selectedValue || "Ação").toUpperCase()}</h1>
       <DropdownAction onValueChange={setSelectedValue} />
       {inputFields.map((inputField) => (
         <div className="input-container" key={inputField.id}>
-          <input type="text"
+          <input
+            type="text"
             placeholder={`Insira a ${selectedValue || "Ação"}...`}
             className="tab-plan-title"
           />

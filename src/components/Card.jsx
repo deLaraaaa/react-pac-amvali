@@ -58,7 +58,7 @@ function Card({
               Leia mais <b id="arrow">→</b>
             </p>
           </div>
-          <div className="date"><p>2024 - 2034</p></div>
+          <div className="date-card"><p>2024 - 2034</p></div>
         </div>
       </Link>
     </div>

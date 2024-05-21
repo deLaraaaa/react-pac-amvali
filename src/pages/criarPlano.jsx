@@ -20,6 +20,13 @@ function CriarPlano() {
         <h1>CRIAÇÃO DE PLANOS</h1>
       </div>
       <Tabs />
+      <div className="scrollToTop">
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          ↑
+        </button>
+      </div>
     </div>
   );
 }

@@ -82,7 +82,7 @@ function Tabs() {
             value={planDescription}
             onChange={handlePlanDescriptionChange}
           />
-          <Dropdown planName={planName} planDescription={planDescription}/>
+          <Dropdown planName={planName} planDescription={planDescription} />
           <AddPlan />
           <AddImage />
         </div>
