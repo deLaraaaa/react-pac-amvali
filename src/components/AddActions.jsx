@@ -31,7 +31,7 @@ function AddActions() {
       <DropdownAction onValueChange={setSelectedValue} />
       {inputFields.map((inputField) => (
         <div className="input-container" key={inputField.id}>
-          <textarea
+          <input type="text"
             placeholder={`Insira a ${selectedValue || "Ação"}...`}
             className="tab-plan-title"
           />
