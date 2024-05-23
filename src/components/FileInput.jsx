@@ -52,7 +52,7 @@ const FileInput = () => {
               aria-label="PDF preview"
             />
           ) : (
-            <img src={URL.createObjectURL(file)} alt="" width="500px" />
+            <img src={URL.createObjectURL(file)} alt="" width="800px" />
           )
         ) : null}
       </div>

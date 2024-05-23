@@ -61,8 +61,8 @@ function AddActions() {
         </div>
       ))}
       <button type="button" className="add-btn" onClick={handleAddFields}>
-        <span class="material-symbols-outlined">description</span>ADICIONAR
-        TEXTO
+        <span class="material-symbols-outlined">description</span>ADICIONAR{" "}
+        {(selectedValue || "Ação").toUpperCase()}
       </button>
     </div>
   );

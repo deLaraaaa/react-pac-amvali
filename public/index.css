@@ -24,6 +24,8 @@ body {
 }
 
 .return {
+  height: 15vh;
+  align-content: end;
   margin-right: 85vw;
   font-size: 22px;
 }
@@ -559,9 +561,15 @@ text {
 }
 
 .navbar-black {
-  width: 97vw;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
+  width: 100vw;
+  padding-top: 5px;
+  background: rgba(255, 255, 255, 0.25); /* semi-transparent white */
+  backdrop-filter: blur(5px);
+  z-index: 1;
 }
 
 .navbar-black a {
@@ -752,13 +760,15 @@ footer p {
 }
 
 .submit-tab input{
-  background: #e5e5e5;
+  border: none;
   cursor: pointer;
-  font-weight: bold;
   padding: 20px 70px;
   font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: bold;
   color: #7f7f7f;
-  transition: background 0.1s, color 0.1s;
+  background: #e5e5e5;
+  transition: background 0.3s, color 0.1s;
 }
 
 .submit-tab input:hover{
@@ -799,21 +809,21 @@ footer p {
 .date {
   width: 180px;
   height: 40px;
-  font-family: "Montserrat";
   border-radius: 5px;
   border: none;
-  box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat";
+  box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .tab-plan-name {
   width: 450px;
   height: 15px;
   border-radius: 5px;
-  border: none;
-  box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
-  resize: none;
-  font-family: "Montserrat";
   font-size: 20px;
+  font-family: "Montserrat";
+  border: none;
+  resize: none;
+  box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .tab-plan-title {
@@ -822,7 +832,7 @@ footer p {
   margin-bottom: 10px;
   border-radius: 5px;
   border: none;
-  box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.25);
   resize: none;
   font-family: "Montserrat";
   font-size: 20px;
@@ -834,10 +844,10 @@ footer p {
   border-radius: 5px;
   margin-top: 50px;
   border: none;
-  box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
   resize: none;
   font-family: "Montserrat";
   font-size: 20px;
+  box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .tab-plan {
@@ -845,10 +855,10 @@ footer p {
   height: 200px;
   border-radius: 5px;
   border: none;
-  box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
   resize: none;
   font-family: "Montserrat";
   font-size: 18px;
+  box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .tab-plan-name:focus {
@@ -861,6 +871,13 @@ footer p {
 
 .tab-plan:focus {
   outline: none;
+}
+
+/* File input */
+.image-visualizer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .file-btn {
@@ -947,7 +964,7 @@ footer p {
   height: 30px;
   font-size: 16px;
   border: none;
-  box-shadow: inset -4px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
 
@@ -967,9 +984,10 @@ input[type="text"] {
 }
 
 input:focus {
-  outline: 1.5px solid #00801a;
+  outline: none;
 }
 
+/* Dinamic inputs */
 .delete-btn {
   width: 50px;
   height: 30px;
@@ -1082,6 +1100,7 @@ input:focus {
   background-color: #ff0000;
 }
 
+/* Scroll to Top */
 .scrollToTop{
   display: flex;
   justify-content: end;
@@ -1094,7 +1113,9 @@ input:focus {
   height: 50px;
   border-radius: 60px;
   font-size: 20px;
+  cursor: pointer;
   border: none;
+  
   transition: 0.3s all ease;
 }
 
@@ -1179,87 +1200,6 @@ input:focus {
 
   footer p {
     margin-right: 5px; /* Reduzido ainda mais o espaçamento à direita */
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 12px;
-  }
-}
-
-/*Monitores de 1920x1080*/
-@media screen and (min-width: 1601px) and (max-width: 1920px) {
-  .navbar {
-    width: 97vw;
-    display: flex;
-    justify-content: center;
-  }
-
-  .navbar h1 {
-    font-size: 35px;
-    font-weight: 700;
-  }
-
-  .navbar h2 {
-    font-weight: 400;
-  }
-
-  .content-nav {
-    width: 92vw;
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .content-nav #login {
-    width: 35px;
-  }
-
-  .content-nav #white-logo {
-    width: 80px;
-  }
-
-  .logo-dash {
-    display: flex;
-    align-items: center;
-  }
-
-  #dash {
-    margin-left: 10px;
-    transition: 0.3s;
-  }
-
-  #dash:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-
-  .identity h1 {
-    text-decoration: none;
-  }
-
-  .identity img {
-    margin-left: 10px;
-  }
-
-  footer {
-    display: flex;
-    width: 98vw;
-    height: 10vh;
-    justify-content: space-between;
-  }
-
-  footer img {
-    width: 140px;
-    margin-right: 100px;
-  }
-
-  .footer-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  footer p {
-    margin-right: 100px;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 12px;

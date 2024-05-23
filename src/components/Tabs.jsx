@@ -112,8 +112,6 @@ function Tabs() {
           <AddURL />
           <div className="submit-tab">
             <input
-              className="submit-tab"
-              name="tabs"
               type="submit"
               value="ADICIONAR PLANO"
             />
