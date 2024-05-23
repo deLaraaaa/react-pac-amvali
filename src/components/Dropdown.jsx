@@ -23,8 +23,6 @@ function Dropdown({ planName, planDescription }) {
     education: BookSvg,
   };
 
-  const SelectedSvg = SVG_MAP[selected];
-
   return (
     <div>
       <p>Selecione a Categoria do seu Plano</p>

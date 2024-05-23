@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BookSvg from "./assets/BookSvg";
 import TreeSvg from "./assets/TreeSvg";
-import MountainSvg from "./assets/MountainSvg";
-import RecycleSvg from "./assets/RecycleSvg";
 import RiverSvg from "./assets/RiverSvg";
 import TapSvg from "./assets/TapSvg";
 import TerritorySvg from "./assets/TerritorySvg";
